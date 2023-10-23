@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2596be;
+}
+
+.sort-buttons {
+    display: flex;
+}
+
+button, select {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: none;
+    transition: 0.3s; 
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+} 
+
+select#mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    button {
+        display: none;
+    }
+
+    select#mobile {
+        display: block;
+    }
+}
